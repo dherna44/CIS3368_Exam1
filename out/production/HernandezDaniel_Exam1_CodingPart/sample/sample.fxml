@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<HBox prefHeight="453.0" prefWidth="559.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox>
+         <children>
+            <ListView fx:id="numListView" prefHeight="457.0" prefWidth="248.0" />
+         </children>
+      </VBox>
+      <VBox prefHeight="453.0" prefWidth="312.0">
+         <children>
+            <HBox>
+               <children>
+                  <VBox prefHeight="27.0" prefWidth="30.0" />
+                  <Label prefHeight="27.0" prefWidth="39.0" text="MIN: " />
+                  <TextField fx:id="minNumTextField" alignment="CENTER" prefHeight="18.0" prefWidth="159.0" promptText="Enter Number" />
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="312.0">
+               <children>
+                  <VBox prefHeight="29.0" prefWidth="29.0" />
+                  <Label prefHeight="23.0" prefWidth="41.0" text="MAX: " />
+                  <TextField fx:id="maxNumTextField" alignment="CENTER" prefHeight="29.0" prefWidth="159.0" promptText="Enter Number" />
+               </children>
+            </HBox>
+            <HBox prefHeight="90.0" prefWidth="312.0">
+               <children>
+                  <VBox prefHeight="95.0" prefWidth="39.0" />
+                  <Button mnemonicParsing="false" onAction="#runButtonClicked" prefHeight="42.0" prefWidth="60.0" text="RUN" />
+                  <VBox prefHeight="95.0" prefWidth="54.0" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#loadButtonClicked" prefHeight="42.0" prefWidth="84.0" text="    LOAD NUMBERS" wrapText="true" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="84.0" />
+                  <Label fx:id="RandomNumber" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>
+
